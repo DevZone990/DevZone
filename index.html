@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevZone990</title>
+    <link rel="icon" href="img/dv blanco.ico">
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+      <!-- header section starts -->
+    <header class="header" data-name="header">
+        <a href="#" class="logo">
+            <img class="logo-1" src="/img/icon fondo negro.png" style="border-radius: 50%;" alt="" loading="lazy">
+        </a>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div  class="line"></div>
+            <div  class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="#home" > inicio</a>
+                </li>
+                <li>
+                    <a href="#about">nosotros</a>
+                </li>
+                <li>
+                    <a href="#portfolio">Proyectos</a>
+                </li>
+                <li>
+                    <a href="#contacto">contacto</a>
+                </li>
+            </ul>
+        </nav>        
+    </header>
+    <!-- header section ends -->  
+    <section class="home" id="home">
+        <div class="titulo">
+            <h2>DevZone</h2>
+            <p>Webs Developers</p>
+        </div>
+        <div class="icono">
+            <img src="img/Programming-amico.png" alt="">
+        </div>
+    </section>
+
+     <!-- home section ends -->  
+     <!-- section starts -->
+    <section class="about hidden" id="about">
+        <!-- <h1 class="heading"><span>sobre </span> Nosotros </h1> -->
+        <div class="row">
+            <img src="img/about.png" alt="" loading="lazy">
+            <div class="content">
+                <h3>Nuestro Camino a ser Webs Developers</h3>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. A, tempore ratione quos alias at iure pariatur, amet consectetur, voluptate harum error. Nobis temporibus assumenda laborum neque atque dolor laudantium odio. <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores minus, quaerat omnis animi laboriosam illum! Perspiciatis sequi quae corrupti eius!
+               </p>
+                <!-- <img src="img/about.jpg" alt="" loading="lazy"> -->
+
+            </div>
+        </div>
+    </section>
+    <!-- proyectos-------------------------------- -->
+    <section class="portfolio hidden" id="portfolio">
+        <div class="heading-por">
+          <h3>Poryectos cafeterias</h3>
+        </div>
+    
+     <div class="container-pages">
+        <article class="art1">
+            <iframe id="myIframe" src="https://devzone990.github.io/" ></iframe>
+            <a class="btn" href="https://devzone990.github.io/"> ver sitio Web</a>
+        </article>
+        <article class="art1">
+            <iframe id="myIframe" src="https://devzone990.github.io/CafeteriaProDZ2/" ></iframe>
+            <a class="btn" href="https://devzone990.github.io/CafeteriaProDZ2/">ver sitio Web</a>
+        </article>
+        <article class="art1">
+            <iframe id="myIframe" src="https://devzone990.github.io/CAFETERIA2/" ></iframe>
+            <a class="btn" href="https://devzone990.github.io/CAFETERIA2/">ver sitio Web</a>
+        </article>
+        <article class="art1">
+            <iframe id="myIframe" src="https://devzone990.github.io/Cafe-3/" ></iframe>
+            <a class="btn" href="https://devzone990.github.io/Cafe-3/">ver sitio Web</a>
+        </article>
+     </div>
+    </section>
+
+    
+<!-- -------------------------SECTION CONTACTO------------------------- -->
+<section class="contact oculto hidden" id="contacto">
+
+    <h3> contactanos </h3>
+
+    <div class="row">
+    <img src="img/contact.png" alt="contact">
+
+        <form action="" method="POST" id="form">
+
+            <div class="inputBox">
+                <span class="fas fa-user"></span>
+                <input type="text" name="name" id="" placeholder="Nombre">
+            </div>
+
+            <div class="inputBox">
+                <span class="fas fa-envelope" ></span>
+                <input type="email" name="email" id="" placeholder="Email">
+            </div>
+
+            <div class="inputBox">
+                <span class="fas fa-phone" ></span>
+                <input type="number" name="phone" id="" placeholder="Número" required>
+            </div>
+
+            <div class="inputBox">
+                <textarea id="textarea" name="mensaje" placeholder="Escribe un mensaje" required></textarea>
+            </div>
+            <input type="submit" class="btn" id="button" value="Enviar Mensaje" required >            
+        </form>
+        <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('w9pA419k1DSWD2EdN')
+</script>
+
+    </div>
+</section>
+<!------------------- FOOTER ---------------------->
+<section class="footer oculto">
+    <div class="shar">
+        <!-- <a href="" class="fab fa-facebook"></a> -->
+        <a href="https://instagram.com/_devzone?igshid=MzRlODBiNWFlZA==" class="fab fa-instagram"></a>
+        <!-- <a href="" class="fab fa-linkedin"></a> -->
+        <a href="https://wa.me/542613461141" class="fab fa-whatsapp"></a>
+    </div>
+
+    <div class="links">
+        <a href="#inicio">inicio</a>
+        <a href="#about">Nosotros</a>
+        <a href="#portfolio">Proyectos</a>
+        <a href="#contact">contacto</a>
+    </div>
+
+    <div class="credit">created by <i style="text-decoration: underline;">
+            <a href="https://www.linkedin.com/in/benjamin-guirin/"> Benjamin.G </a></i> and <i style="text-decoration: underline;">
+            <a href="https://www.linkedin.com/in/cristian-nieves1012/"> Diego.N </a></i> <a href="mailto:devzone990gmail.com"> | DevZone</a> | all rights reserved </div>
+</section>
+
+
+    <script src="js.js"></script>
+</body>
+</html>
