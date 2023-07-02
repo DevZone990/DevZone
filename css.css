@@ -45,6 +45,7 @@ html::-webkit-scrollbar-thumb{
     background: var(--tercer-color);
  }
  .btn{
+    border-radius: .5rem;
     text-align: center;
     margin-top: 1rem;
     display: inline-block;
@@ -90,12 +91,13 @@ header{
 .nav-bar ul{
     display: flex;
     list-style: none;
+    font-family: 'Staatliches','cursive' ;
 }
 .nav-bar ul li a{
     display: block;
-    color: var(--primer-color);
+    color: var(--tercer-color);
     font-size: 2rem;
-    padding:.7rem 5rem ;
+    padding: .5em 4rem ;
     margin: 0 .2rem;
     border-radius: 2rem;
 
@@ -152,7 +154,7 @@ header{
     align-items: center;
     border-radius: .5rem;
 }
-.about .row img{
+.about img{
     border-radius: .5rem 0 0 .5rem;
     min-width:36vw ;
     
@@ -161,8 +163,10 @@ header{
     background: var(--segundo-color);
 }
 .about .row .content h3{
+    padding:.5rem 2rem;
     font-weight: 700; 
-    font-size: 4.5rem;
+    font-size: 3.6rem;
+    line-height: 1.6;
     text-decoration: underline var(--primer-color);
     color:var(--tercer-color);
 }
@@ -170,9 +174,10 @@ header{
     text-transform: uppercase;
     font-size: 1.5rem;
     color: #ccc;
-    padding: 1rem;
-    line-height:2.5;
+    padding: 1.5rem;
+    line-height:1.4;
 }
+
 /*porfolio-------------------------------*/
 .heading-por h3{
     font-size: 5rem;
@@ -228,6 +233,7 @@ header{
 
 
 .contact .row form .inputBox{
+    border-radius: .5rem;
     display: flex;
     align-items: center;
     margin-top: 2rem;
@@ -367,6 +373,9 @@ header{
         opacity: 1;
     }
     .nav-bar ul li a{
+        background-color:var(--primer-color);
+        color: var(--tercer-color);
+        padding:2rem 9rem ;
         font-size: 3rem;
         margin-bottom: 4rem;
     }
@@ -446,6 +455,7 @@ header{
        
     }
     .home{
+        height: 80vh;
         justify-content: center;
         grid-template-columns:minmax(16rem,auto);
     }
@@ -454,7 +464,7 @@ header{
         padding-bottom: 2rem;
         width: 35rem;
         padding-left: 2rem;
-        margin-bottom: 7rem;
+        margin-bottom: 2rem;
     }
     .home .titulo h2{
        font-size:12rem ;
@@ -514,26 +524,27 @@ header{
         background-color: var(--primer-color);
         color: var(--segundo-color);
     }
+    .about .row .content p{
+        font-size: 1.3rem;
+        line-height: 1.5;
+    }
     .about .row img{
-        align-items: end;
-        width:50%;
-
+        width:100%;
+        margin: 0 auto;
+    
+    }
+    .about .row {
+        display: block;
     }
     .about .row .content h3{
-        font-size: 2.3rem;
-        padding-top: 1rem;
-    }
-    .about .row .content p{
-        font-size: .9rem;
-        padding-bottom: 1rem;
-        line-height: 1.2;
-
+        font-size: 3.3rem;
+        text-align: center;
     }
     .heading-por h3{
         text-align: center;
     }    
     .contact .row img{
-        width: 36rem;
+        width: 34rem;
         padding:2rem ;
         /* justify-content: center; */
         margin: 0 auto;
