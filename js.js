@@ -1,11 +1,20 @@
-const seccionesOcultas = document.querySelectorAll('.hidden');
-
-const observer = new IntersectionObserver((entries)=>{
-    entries.forEach((entry)=>{
-        entry.target.classList.toggle('mostrar', entry.isIntersecting);
+// SECCION SCROLL ANIMACION
+const boxes = document.querySelectorAll('.hidden')
+window.addEventListener('scroll',checkBoxes)
+ checkBoxes()
+ function checkBoxes(){
+    const triggerBottom = window.innerHeight /5*4
+    boxes.forEach(box =>{
+        const boxTop = box.getBoundingClientRect().top
+        if (boxTop < triggerBottom){
+            box.classList.add('show')
+        }else{
+            box.classList.remove('show')
+        }
     })
-})
-seccionesOcultas.forEach((seccion)=>observer.observe(seccion));
+ }
+
+
 //nav
         // Obtener elementos del DOM
         const hamburger = document.querySelector('.hamburger');
