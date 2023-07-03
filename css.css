@@ -21,7 +21,7 @@
 
 }
 .logo-1{
-    width: 7rem;
+    width: 6rem;
     padding: .5rem;
 }
 html{
@@ -44,6 +44,21 @@ html::-webkit-scrollbar-thumb{
  body{
     background: var(--tercer-color);
  }
+ .btn-1{
+    background-color: #3030307d;
+    border-radius: .5rem;
+    text-align: center;
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .9rem 3rem;
+    font-size: 1.45rem;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid #fff;
+ }
+ .btn-1:hover{
+    letter-spacing: .2rem;
+}
  .btn{
     border-radius: .5rem;
     text-align: center;
@@ -171,7 +186,7 @@ header{
     color:var(--tercer-color);
 }
 .about .row .content p{
-    text-transform: uppercase;
+    text-transform:none;
     font-size: 1.5rem;
     color: #ccc;
     padding: 1.5rem;
@@ -189,7 +204,12 @@ header{
     grid-template-columns: repeat(2,minmax(280px,auto));
     gap: 4rem;
 }
-.container-pages .art1 {
+.container-pages .proyectos a{
+    position: absolute;
+    left: 31%;
+    right: 31%;
+}
+.container-pages .proyectos {
     position: relative;
     padding: 10px;
     display: flex;
@@ -198,14 +218,7 @@ header{
     border-radius: 0.5rem;
 
 }
-.container-pages iframe{
-    width:100% ;
-    height: 30rem;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 0.5rem;
-
-}  
+  
 /* contacto ------------------------------------------*/
 .contact h3 {
     font-family: 'Staatliches','cursive';
@@ -358,7 +371,7 @@ header{
     
     }
     .nav-bar.active{
-        height:100vh ;
+        height:60vh ;
     }
     .nav-bar ul {
         width: fit-content;
@@ -373,11 +386,11 @@ header{
         opacity: 1;
     }
     .nav-bar ul li a{
-        background-color:var(--primer-color);
-        color: var(--tercer-color);
+        color: var(--primer-color);
         padding:2rem 9rem ;
-        font-size: 3rem;
-        margin-bottom: 4rem;
+        font-size: 2.5rem;
+        margin-bottom: 0rem;
+        letter-spacing: 4px;
     }
     .nav-bar ul li a:hover{
         background-color: var(--primer-color);
@@ -388,13 +401,12 @@ header{
 
     }
     .about .row .content h3{
-        font-size: 4rem;
+        font-size: 3rem;
         padding-top: 1rem;
     }
     .about .row .content p{
-        font-size: 1rem;
+        font-size: 1.4rem;
         padding-bottom: 1rem;
-        line-height: 2.5;
     }
     .contact .row img{
         width: 36rem;
@@ -404,51 +416,6 @@ header{
      }
   }
 
-  /* @media (max-width: 768px) {
-    .logo-1{
-        width: 6.6rem;
-    }
-    #menu-btn{
-        display: inline-block;
-    }
-    .header .navbar{
-        position: absolute;
-        top: 80%;
-        left:0 ; right: 0;
-        background: var(--primer-color);
-        width: 100vh;
-        height: 70vh;
-        transition: 1s ease; 
-    }
-    .header .navbar.active{
-        transition: .8s ease;
-        height:0;
-
-    }
-    .header .navbar a{
-        color:#ccc;
-        display: block;
-        margin: 3rem;
-        padding: 1.5rem;
-        font-size:4rem ;
-        text-align:center;
-        overflow: hidden;
-        opacity: 0;
-    }
-    .home{
-        background-position: left;
-        justify-content: center;
-        text-align: center;
-    }
-    .home .content h3{
-        font-size: 4.5rem;
-    }
-    .home .content p{
-        font-size: 1.5rem;
-    }
-
-  }
- */
   @media (max-width: 450px) {
     html{
         font-size:50% ;
@@ -502,7 +469,7 @@ header{
     
     }
     .nav-bar.active{
-        height:100vh ;
+        height:50vh ;
     }
     .nav-bar ul {
         width: fit-content;
@@ -517,8 +484,8 @@ header{
         opacity: 1;
     }
     .nav-bar ul li a{
-        font-size: 3rem;
-        margin-bottom: 5rem;
+        font-size: 2rem;
+        letter-spacing: 2px;
     }
     .nav-bar ul li a:hover{
         background-color: var(--primer-color);
@@ -537,8 +504,11 @@ header{
         display: block;
     }
     .about .row .content h3{
-        font-size: 3.3rem;
+        font-size: 3rem;
         text-align: center;
+    }
+    .about .row .content p{
+        font-size: 1.7rem;
     }
     .heading-por h3{
         text-align: center;
