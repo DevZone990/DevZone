@@ -79,7 +79,7 @@ html::-webkit-scrollbar-thumb{
  /* scrool animacion ------------------------------*/
  .hidden{
     transform: translateX(400%);
-    transition: transform 1s ease;
+    transition: transform .4s ease;
 }
 .hidden:nth-last-of-type(even){
     transform: translateX(-400%);
