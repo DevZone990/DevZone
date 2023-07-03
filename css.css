@@ -76,16 +76,17 @@ html::-webkit-scrollbar-thumb{
  section{
     padding: 2rem 7%;
  }
- /* scrool animacion ------------------------------*/
- .hidden{
-    transform: translateX(400%);
-    transition: transform .4s ease;
+
+
+/* ---------------------------------------------- */
+ .mob{
+    transform: scale(0.8);
+    opacity: 0;
+    transition: all .5s ease-out;
 }
-.hidden:nth-last-of-type(even){
-    transform: translateX(-400%);
-}
-.hidden.show{
-    transform: translateX(0);
+.mostrar{
+   transform: scale(1);
+   opacity: 1;
 }
 #myIframe {
     pointer-events: none;
