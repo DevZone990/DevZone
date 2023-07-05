@@ -121,9 +121,10 @@ header{
 
 }
 .nav-bar ul li a:hover{
-    color: #000;
-    background-color:var(--primer-color);
-    border-radius: 2rem;
+    color: var(--primer-color);
+    border-bottom: .1rem solid var(--main-color);
+    padding-bottom: .5rem;
+   
 }
 .nav-bar ul li a.active{
     color:var(--segundo-color) ;
@@ -151,7 +152,7 @@ header{
     font-size: 3rem;
     text-decoration: underline;
     padding:0;
-     text-decoration:underline #0fa567;
+    text-decoration:underline #0fa567;
 }
 .home .titulo .lema{
     text-decoration: none;
@@ -161,7 +162,7 @@ header{
     /* width: 30%; */
   align-items: center;
   width: 50rem;
-  margin-bottom: 10rem;
+  margin-bottom: 4rem;
   padding-top:11rem;
   padding-left:11rem ;
 
@@ -448,16 +449,21 @@ header{
         justify-content: center;
         grid-template-columns:minmax(16rem,auto);
     }
+    .home .icono{
+        display: flex;
+        
+    }
     .home .icono img{
-        padding-top: 3rem;
-        padding-bottom: 2rem;
-        width: 35rem;
-        padding-left: 2rem;
-        margin-bottom: 2rem;
+        width: 40rem;
+        margin: 0 auto;
+        padding:1rem ;
+ 
+
     }
     .home .titulo h2{
-       font-size:12rem ;
+        font-size:12rem ;
         padding-top: 4rem;
+        text-align: center;
     
     }
     .home .titulo p{
