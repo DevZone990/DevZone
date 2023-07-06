@@ -122,14 +122,14 @@ header{
 }
 .nav-bar ul li a:hover{
     color: var(--primer-color);
-    border-bottom: .1rem solid var(--main-color);
+    border-bottom: .1rem solid var(--primer-color);
     padding-bottom: .5rem;
-   
+    letter-spacing: .5rem;
 }
 .nav-bar ul li a.active{
-    color:var(--segundo-color) ;
-    background-color: var(--primer-color);
-
+    color: var(--primer-color);
+    border-bottom: .1rem solid var(--primer-color);
+    padding-bottom: .5rem;
 }
 /* ---------home------------------------------*/
 .home{
@@ -416,8 +416,10 @@ header{
         letter-spacing: 4px;
     }
     .nav-bar ul li a:hover{
-        background-color: var(--primer-color);
-        color: var(--segundo-color);
+        color: var(--primer-color);
+        border-bottom: .1rem solid var(--primer-color);
+        padding-bottom: .5rem;
+        letter-spacing: .5rem;
     }
     .about img{
         width: 25rem;
@@ -516,8 +518,10 @@ header{
         letter-spacing: 2px;
     }
     .nav-bar ul li a:hover{
-        background-color: var(--primer-color);
-        color: var(--segundo-color);
+        color: var(--primer-color);
+        border-bottom: .1rem solid var(--primer-color);
+        padding-bottom: .5rem;
+        letter-spacing: .5rem;
     }
     .about .row .content p{
         font-size: 1.3rem;
