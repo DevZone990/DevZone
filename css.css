@@ -164,7 +164,7 @@ header{
   width: 50rem;
   margin-bottom: 4rem;
   padding-top:11rem;
-  padding-left:11rem ;
+  padding-left:5rem ;
 
 }
 /* about------------------------------- */
@@ -338,6 +338,9 @@ header{
 .footer .credit a{
     color: var(--main-color);
 }
+.footer  .logo-f img{
+    width: 10rem;
+}
 /**/
 
 /*   Media Querys */
@@ -346,7 +349,6 @@ header{
         text-decoration: none;
         font-size: 2rem;
     }
-    
 }
 @media only screen and (max-width: 1320px){
     .header{
@@ -436,12 +438,15 @@ header{
     .contact .row img{
         width: 36rem;
     }
+    .home .icono img{
+        width:40rem ;
+    }
     section{
         padding: 2rem;
      }
   }
 
-  @media (max-width: 450px) {
+  @media (max-width: 510px) {
     html{
         font-size:50% ;
        
@@ -456,9 +461,9 @@ header{
         
     }
     .home .icono img{
-        width: 40rem;
+        width: 35rem;
         margin: 0 auto;
-        padding:1rem ;
+        padding:.5rem ;
  
 
     }
@@ -500,6 +505,7 @@ header{
     }
     .nav-bar.active{
         height:50vh ;
+        width: 100%;
     }
     .nav-bar ul {
         width: fit-content;
