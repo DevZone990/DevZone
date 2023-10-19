@@ -139,6 +139,7 @@ header{
     gap: 1rem;
     min-height: 100vh;
 }
+
 .home .titulo h2{
     font-family: 'Staatliches','cursive';
     font-size: 12rem;
@@ -309,6 +310,7 @@ header{
 
 .formulario .row{
     display: flex;
+    justify-content: center;
     background: var(--segundo-color);
     flex-wrap: wrap;
     gap: 1rem;
@@ -316,6 +318,7 @@ header{
 .formulario .row img{
     width: 40rem;
     padding: 5rem;
+    justify-content: center;
 }
 
 
@@ -586,8 +589,14 @@ header{
     }
     .home .titulo p{
          font-size: 3rem;
-        text-align: center;
-}
+         text-align: center;
+    }
+    .home .titulo a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+   }
+    
     .container-pages{
         grid-template-columns:minmax(100%,auto);  
     }
