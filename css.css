@@ -294,6 +294,117 @@ header{
 .contact .row form textarea::placeholder{
     color: var(--primer-color);
 }
+/* contact end */
+/* contacto ------------------------------------------*/
+.formulario {
+    height: 100vh;
+}
+.formulario h3 {
+    font-family: 'Staatliches','cursive';
+    text-align: center;
+    padding-top:1rem ;
+    font-size: 5rem;
+    text-decoration: underline var(--primer-color);
+}
+
+.formulario .row{
+    display: flex;
+    background: var(--segundo-color);
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.formulario .row img{
+    width: 40rem;
+    padding: 5rem;
+}
+
+
+.formulario .row form{
+    flex: 1 1 5rem;
+    padding: 2rem 2rem;
+    text-align: center;
+}
+
+
+.formulario .row form .inputBox{
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1.3rem;
+    background: #303030;
+}
+
+.formulario .row form .inputBox span{
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 1.5rem;
+}
+
+.formulario .row form .inputBox label{
+    padding-left: 1.8rem;
+    font-size: 1.7rem;
+}
+
+.formulario .row form .inputBox input{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.7rem;
+    color: #12dda0;
+    text-transform: none;
+    background: none;
+}
+.formulario .row form .inputBox span{
+    color: var(--primer-color);
+}
+.formulario .row form .inputBox textarea{
+    height: 6rem;
+    width:35rem ;
+    background-color: transparent;
+    color: #12dda0;
+    max-width: 50rem;
+    max-height: 30rem;
+    font-size: 2rem;
+    padding-left: 2rem;
+    padding-top: 1.8rem;
+}
+.formulario .row form .btn{
+    margin-right: .5rem;
+}
+
+.formulario .row form input::placeholder{
+    color: var(--primer-color);
+}
+.formulario .row form textarea::placeholder{
+    color: var(--primer-color);
+}
+/* Estilos para las opciones */
+.inputBox select {
+    width: 25rem;
+    font-size: 16px;
+    padding: 5px;
+    border:2px solid var(--primer-color);
+    border-radius: 3px;
+    background-color:#303030;
+    color: var(--tercer-color);
+}
+
+/* Estilo para la opción seleccionada */
+.inputBox select option:checked {
+    background-color: var(--primer-color);
+    color: #fff;
+}
+
+/* Estilos para las opciones individuales */
+.inputBox select option {
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Estilos para el último elemento de la lista */
+.inputBox select option:last-child {
+    border-bottom: none;
+}
 /* FOOTER-------------------------------------- */
 .footer{
     background: var(--primer-color);

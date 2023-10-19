@@ -29,7 +29,10 @@ seccionesOcultas.forEach((seccion)=>observer.observe(seccion));
                 navBar.classList.remove('active');
             });
         });
-
+        Window.onscroll = ()=>{
+            navbar.classList.remove('active');
+        }
+        
 // section contacto---------------------------------------
 const btn = document.getElementById('button');
 
@@ -51,4 +54,24 @@ document.getElementById('form')
       alert(JSON.stringify(err));
     });
 });
+//---------------COTIZAR MAIL-------------------------//
+const button = document.getElementById('button');
 
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Enviando...';
+
+   const serviceID = 'service_xcf8tvr';
+   const templateID = 'template_gsi4g8n';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Enviar Mensaje';
+      alert('Mensaje Enviado Correctamente!');
+    }, (err) => {
+      btn.value = 'Enviar Mensaje';
+      alert(JSON.stringify(err));
+    });
+});

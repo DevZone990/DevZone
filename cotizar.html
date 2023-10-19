@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevZone | Desarrollo Web Profesional</title>
+    <meta name="description" content="Expertos en Desarrollo Web | Maquetación Web | Posicionamiento SEO">
+    <link rel="icon" href="img/logo-g.ico">
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>  <!-- header section starts -->
+    <header class="header" data-name="header">
+        <a href="#home" class="logo">
+            <img class="logo-1" src="./img/icon fondo negro.png" style="border-radius: 50%;" alt="" loading="lazy">
+        </a>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div  class="line"></div>
+            <div  class="line"></div>
+        </div>
+        
+    </header>
+    <!-- header section ends -->  
+    <h1>
+        puyo
+    </h1>
+  <!-- main section start-->
+ 
+    <section class="formulario oculto hidden" id="contacto">
+
+        <h3>Comentanos de tu Proyecto</h3>
+    
+        <div class="row">
+            <img src="img/formulario.png" alt="contact">
+    
+            <form action="" method="POST" id="form">
+    
+                <div class="inputBox">
+                    <span class="fas fa-user"></span>
+                    <input type="text" name="name" id="" placeholder="Nombre">
+                </div>
+    
+                <div class="inputBox">
+                    <span class="fas fa-envelope" ></span>
+                    <input type="email" name="email" id="" placeholder="Email">
+                </div>
+    
+                <div class="inputBox">
+                    <span class="fas fa-phone" ></span>
+                    <input type="number" name="phone" id="" placeholder="Número" required>
+                </div>
+
+                <div class="inputBox">
+                    <span class="fa-brands fa-font-awesome"><label for="pais"> Selecciona un país:</label></span>
+                    <select id="pais" name="pais"></select>
+                </div>
+
+                <div class="inputBox">
+                    <span  for="host">¿Ya tenes hosting?</span>
+                    <select id="host" name="host">
+                        <option value="si">SI</option>
+                        <option value="no">NO</option>
+                        <option value="ns">NO SE</option>
+                        <!-- Agrega más opciones de países según sea necesario -->
+                    </select>
+                </div>
+
+                <div class="inputBox">
+                    <textarea id="textarea" name="mensaje" placeholder="Caracteristicas del proyecto" required></textarea>
+                </div>
+                <input type="submit" class="btn" id="button" value="Cotizar" required >     
+                <a href="index.html" class="btn">Volver a inicio</a>    
+            </form>
+            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+            <script type="text/javascript">
+            emailjs.init('w9pA419k1DSWD2EdN')
+            </script>
+
+<script>
+    const select = document.getElementById('pais');
+
+    // Hacer una solicitud a la API de Rest Countries
+    fetch('https://restcountries.com/v2/all')
+        .then(response => response.json())
+        .then(data => {
+            data.forEach(country => {
+                const option = document.createElement('option');
+                option.value = country.alpha2Code; // Puedes usar otro código si prefieres
+                option.text = country.name;
+                select.appendChild(option);
+            });
+        })
+        .catch(error => {
+            console.error('Error al cargar los países:', error);
+        });
+</script>
+    
+        </div>
+    </section>
+<!------------------- FOOTER ---------------------->
+<footer class="footer oculto hidden mob">
+    <div class="shar">
+        <!-- <a href="" class="fab fa-facebook"></a> -->
+        <a href="https://instagram.com/_devzone?igshid=MzRlODBiNWFlZA==" class="fab fa-instagram"></a>
+
+        <a href="https://wa.me/542613461141" class="fab fa-whatsapp"></a>
+    </div>
+
+    <div class="links">
+        <a href="#home">inicio</a>
+        <a href="#about">Nosotros</a>
+        <a href="#portfolio">Proyectos</a>
+        <a href="#contact">contacto</a>
+    </div>
+
+    <div class="credit">created by <i style="text-decoration: underline;">
+            <a href="https://www.linkedin.com/in/benjamin-guirin/"> Benjamin.G </a></i> and <i style="text-decoration: underline;">
+            <a href="https://www.linkedin.com/in/cristian-nieves1012/"> Diego.N </a></i> <a href="mailto:devzone990gmail.com"> | DevZone</a> | all rights reserved
+     </div>
+     <div class="logo-f">
+        <img src="img/devzone negro.png" alt="">
+     </div>
+</footer>
+</div>
+
+    <script src="js.js"></script>
+</body>
+
+</body>
+</html>
